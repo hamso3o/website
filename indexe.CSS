@@ -1,0 +1,345 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #2c3e50; /* Couleur de fond */
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav {
+    background-color: #34495e; /* Couleur de fond de la barre de navigation */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+    padding: 0 10px;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #2c3e50; /* Couleur de fond du sous-menu */
+    padding: 10px 0;
+    text-align: left;
+    min-width: 200px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.sub-menu li {
+    display: block;
+    margin: 0;
+}
+
+.sub-menu li a {
+    color: #fff;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.sub-menu li a:hover {
+    background-color: #34495e; /* Couleur de fond au survol */
+}
+
+header {
+    background-image: url('Image/gta.jpg'); /* Image de fond de l'en-tête */
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.header-container {
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.download-button {
+    display: inline-block;
+    background-color: #3498db; /* Couleur du bouton de téléchargement */
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.9s ease;
+    text-align: center; /* Centrer les éléments à l'intérieur du conteneur */
+}
+
+.download-button:hover {
+    background-color: #1f5678; /* Couleur au survol du bouton */
+    transition: background-color 0.9s ease;
+}
+
+.banner {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.banner img {
+    max-width: 100%;
+}
+
+.content {
+    padding: 100px 0;
+}
+
+.content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.gallery img {
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+form {
+    text-align: left;
+}
+
+form label,
+form input,
+form textarea,
+form button {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+footer {
+    background-color: #34495e; /* Couleur de fond du footer */
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.banner {
+    background-image: url('ma-banniere.jpg'); /* Chemin de votre image de bannière */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px; /* Espacement en bas pour éviter le chevauchement avec le contenu suivant */
+}
+.title-container {
+    background-image: url('background-image.jpg'); /* Chemin vers l'image de fond */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  h1 {
+    color: #ffffff; /* Couleur du texte */
+    font-size: 36px;
+  }
+  
+
+  
+  .download-btn:hover {
+    background-color:#00448c; /* Couleur de fond du bouton au survol */
+    transition: background-color 0.9s ease;
+  }
+
+
+
+
+  .slideshow-bubble {
+    background-color: #7391bd; /* Couleur de fond de la bulle */
+    border: 2px solid #000000; /* Bordure de la bulle */
+    border-radius: 10px; /* Bordure arrondie */
+    padding: 20px; /* Espacement intérieur */
+    box-shadow: 10 10 10px rgba(0, 0, 0, 0.1); /* Ombre */
+    max-width: 800px; /* Largeur maximale */
+    margin: 50px auto 0;
+    text-align: center;
+  }
+
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: none;
+    text-align: center; /* Centre l'image à l'intérieur de la diapositive */
+  }
+  
+  .slide img {
+    max-width: 100%; /* Rétrécit l'image pour qu'elle ne dépasse pas la largeur de la diapositive */
+    height: auto; /* Maintient le ratio hauteur/largeur de l'image */
+  }
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+
+  .fade {
+    animation: fadeEffect 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes fadeEffect {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  /* texte */
+
+
+  .text-container {
+    display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
+  }
+  
+  .text-column {
+    flex: 1; /* Chaque colonne doit occuper autant d'espace que possible */
+    padding: 0 10px; /* Espacement entre les colonnes */
+  }
+  
+  .text-column h2,
+  .text-column h3 {
+    text-align: center; /* Centrer les titres dans chaque colonne */
+  }
+  
+  .text-column ul,
+  .text-column ol {
+    margin-top: 0; /* Supprimer la marge supérieure des listes */
+    padding-left: 20px; /* Ajouter un peu de retrait à gauche pour les listes */
+  }
+  
+  .contact-bubble {
+    background-color: #f9f9f9;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 50px auto 0;
+}
+
+.form-container {
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 10px;
+    color: black; /* Définir la couleur du texte en noir */
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #8e7878;
+    border-radius: 4px;
+    box-sizing: border-box; /* Pour inclure le padding et la bordure dans la largeur totale */
+}
+
+.form-container button {
+    background-color: #52b555;
+    color:black;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.9s;
+}
+
+.form-container button:hover {
+    background-color: #2c5f2e;
+}
+
+  
